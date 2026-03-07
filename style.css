@@ -8,6 +8,7 @@ body {
   color: #333;
   line-height: 1.5;
   background: #f5f0e8;
+  overflow-x: hidden;
 }
 
 /* Hero */
@@ -113,7 +114,17 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding-bottom: 1rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.features::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
 }
 .content-section {
   position: relative;
@@ -224,9 +235,11 @@ section {
 .cta-banner {
   max-width: 680px;
   margin: 0 auto;
-  padding-bottom: 2rem;
+  padding: 2rem;
+  background: #ece6da;
+  border: 1px solid rgba(0, 0, 0, 0.12);
 }
-.cta-banner > p {
+.cta-text {
   text-align: center;
   color: #555;
   font-size: 1.05rem;
@@ -304,10 +317,9 @@ section {
   .faq-grid { grid-template-columns: repeat(4, 1fr); }
 }
 .faq-item {
-  background: #fff;
-  border-radius: 8px;
-  padding: 1.25rem 1.25rem 1.25rem 1.25rem;
-  border-top: 3px solid #a52a2a;
+  background: #ece6da;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 1.25rem;
 }
 .faq-item h3 {
   font-size: 1rem;
@@ -367,13 +379,10 @@ footer::before {
 .footer-bottom {
   max-width: 1000px;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-}
+  text-align: center
+;}
 .footer-copy {
   font-size: 0.85rem;
   color: rgba(255,255,255,0.9);
+  text-align: center;
 }
