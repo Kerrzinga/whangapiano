@@ -65,7 +65,7 @@ body {
   width: 100%;
   text-align: center;
 }
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   .hero-inner {
     width: 66%;
     margin-left: 0;
@@ -112,17 +112,18 @@ section {
 .features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .content-section {
   position: relative;
 }
-@media (max-width: 599px) {
+@media (max-width: 649px) {
   .features { grid-template-columns: 1fr; justify-items: center; }
   .feature { justify-content: flex-start; text-align: left; width: 320px; max-width: 100%; }
 }
-@media (min-width: 600px) {
-  .feature { padding-left: 1.5rem; }
+@media (min-width: 650px) {
+  .feature { padding: 0 0.75rem; }
   .feature + .feature {
     border-left: 1px solid rgba(0, 0, 0, 0.1);
   }
@@ -178,7 +179,7 @@ section {
   grid-template-columns: 1fr;
   gap: 2rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   .lessons-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (min-width: 1024px) {
@@ -237,7 +238,7 @@ section {
   grid-template-columns: 1fr 1fr;
   gap: 1.25rem;
 }
-@media (max-width: 599px) {
+@media (max-width: 649px) {
   .form-row { grid-template-columns: 1fr; }
 }
 .form-group {
@@ -292,7 +293,7 @@ section {
   grid-template-columns: 1fr;
   gap: 1.5rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   .faq-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (min-width: 1024px) {
