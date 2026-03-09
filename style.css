@@ -144,6 +144,16 @@ section {
   align-items: flex-start;
   gap: 1rem;
   text-align: left;
+  transition: background 0.2s;
+  border-radius: 4px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.feature:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+.feature:hover .icon-sprite {
+  transform: translateY(-3px);
 }
 .feature-icon {
   line-height: 1;
@@ -159,6 +169,7 @@ section {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
+  transition: transform 0.25s ease;
 }
 .icon-sprite-sm {
   display: inline-block;
@@ -203,6 +214,11 @@ section {
   text-align: left;
   max-width: 350px;
   margin: 0 auto;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.lesson-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 .lesson-card img {
   width: 100%;
@@ -320,6 +336,11 @@ section {
   background: #ece6da;
   border: 1px solid rgba(0, 0, 0, 0.12);
   padding: 1.25rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.faq-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 .faq-item h3 {
   font-size: 1rem;
