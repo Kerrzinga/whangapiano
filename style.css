@@ -469,6 +469,13 @@ section {
     margin: 0 auto;
   }
 }
+.portrait-caption {
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.5rem;
+}
 .about-heading {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.6rem;
