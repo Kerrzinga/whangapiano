@@ -310,14 +310,18 @@ section {
 
 /* Trinity page */
 .trinity-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
-  align-items: start;
   margin-bottom: 1rem;
 }
-@media (max-width: 649px) {
-  .trinity-layout { grid-template-columns: 1fr; }
+.trinity-layout::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.trinity-image {
+  float: left;
+  width: 350px;
+  max-width: 45%;
+  margin: 0 2.5rem 1rem 0;
 }
 .trinity-image img {
   display: block;
@@ -325,6 +329,14 @@ section {
   aspect-ratio: 3/4;
   object-fit: cover;
   border: 1px solid rgba(0, 0, 0, 0.12);
+}
+@media (max-width: 649px) {
+  .trinity-image {
+    float: none;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 1.5rem;
+  }
 }
 .trinity-text p {
   font-size: 0.95rem;
@@ -523,4 +535,11 @@ footer::before {
   font-size: 0.85rem;
   color: rgba(255,255,255,0.9);
   text-align: center;
+}
+.footer-link {
+  color: rgba(255,255,255,0.9);
+  text-decoration: underline;
+}
+.footer-link:hover {
+  color: #fff;
 }
