@@ -215,6 +215,8 @@ section {
   max-width: 350px;
   margin: 0 auto;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
 }
 .lesson-card:hover {
   transform: translateY(-4px);
@@ -239,6 +241,7 @@ section {
   line-height: 1.6;
   padding: 0 1rem 1rem;
   margin: 0;
+  flex: 1;
 }
 .btn-outline-red {
   background: #a52a2a;
@@ -346,14 +349,22 @@ section {
 }
 .back-link:hover { text-decoration: underline; }
 .card-more-link {
-  display: inline-block;
-  padding: 0 1rem 1rem;
-  font-size: 0.85rem;
+  display: block;
+  margin: 0 1rem 1rem;
+  padding: 0.55rem 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: #922b21;
   text-decoration: none;
+  border: 1.5px solid #922b21;
+  border-radius: 4px;
+  text-align: center;
+  transition: background 0.2s, color 0.2s;
 }
-.card-more-link:hover { text-decoration: underline; }
+.card-more-link:hover {
+  background: #922b21;
+  color: #fff;
+}
 
 /* Gallery */
 .gallery-grid {
