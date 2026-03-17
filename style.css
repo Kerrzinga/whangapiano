@@ -247,78 +247,21 @@ section {
   padding: 0.6rem 1.25rem;
 }
 
-/* CTA / Contact */
-.cta-banner {
-  max-width: 680px;
-  margin: 0 auto;
-  padding: 2rem;
-  background: #ece6da;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-}
-.cta-text {
-  text-align: center;
-  color: #555;
-  font-size: 1.05rem;
-  margin-bottom: 2rem;
-}
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
-}
-@media (max-width: 649px) {
-  .form-row { grid-template-columns: 1fr; }
-}
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-}
-.form-group label {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #333;
-}
-.form-group input,
-.form-group textarea {
-  font-family: inherit;
-  font-size: 0.95rem;
-  color: #333;
-  background: #fff;
-  border: 1px solid rgba(0,0,0,0.2);
-  border-radius: 6px;
-  padding: 0.65rem 0.85rem;
-  transition: border-color 0.2s;
-  width: 100%;
-}
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: #a52a2a;
-}
-.form-group textarea {
-  min-height: 120px;
-  resize: vertical;
-}
-.form-submit {
-  align-self: flex-start;
+.btn-call-about {
+  display: inline-block;
+  margin-top: 0.5rem;
   padding: 0.9rem 2.5rem;
+  background: linear-gradient(to bottom, #c0392b, #922b21);
+  color: #fff;
   font-family: inherit;
   font-size: 1rem;
   font-weight: 700;
-  border: none;
+  text-decoration: none;
   border-radius: 6px;
-  cursor: pointer;
-  background: linear-gradient(to bottom, #c0392b, #922b21);
-  color: #fff;
   transition: opacity 0.2s;
 }
-.form-submit:hover { opacity: 0.9; }
+.btn-call-about:hover { opacity: 0.9; }
+
 
 /* FAQ */
 .faq-grid {
@@ -353,6 +296,148 @@ section {
   color: #555;
   line-height: 1.6;
   margin: 0;
+}
+
+/* Trinity page */
+.trinity-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+@media (max-width: 649px) {
+  .trinity-layout { grid-template-columns: 1fr; }
+}
+.trinity-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.trinity-text p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+.trinity-why {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.trinity-why p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.75;
+  margin-bottom: 1.75rem;
+}
+.trinity-back {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem 2.5rem;
+}
+.back-link {
+  font-size: 0.9rem;
+  color: #922b21;
+  text-decoration: none;
+  font-weight: 700;
+}
+.back-link:hover { text-decoration: underline; }
+.card-more-link {
+  display: inline-block;
+  padding: 0 1rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #922b21;
+  text-decoration: none;
+}
+.card-more-link:hover { text-decoration: underline; }
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 649px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+}
+.gallery-item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.gallery-item img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Location */
+.location-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+@media (max-width: 649px) {
+  .location-layout { grid-template-columns: 1fr; }
+}
+.location-address {
+  font-style: normal;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+}
+.location-map iframe {
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  width: 100%;
+}
+
+/* About the Teacher */
+.about-layout {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+@media (max-width: 649px) {
+  .about-layout { grid-template-columns: 1fr; }
+}
+.about-portrait img {
+  width: 280px;
+  height: 360px;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  display: block;
+}
+@media (max-width: 649px) {
+  .about-portrait img {
+    width: 100%;
+    height: 280px;
+  }
+}
+.about-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.about-text p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.75;
+  margin-bottom: 0.85rem;
 }
 
 /* Thank You page */
