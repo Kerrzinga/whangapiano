@@ -21,7 +21,7 @@ body {
   justify-content: center;
   text-align: center;
   background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-    url('images/main.png') center center/cover no-repeat;
+    url('images/main.jpg') center center/cover no-repeat;
   padding: 2rem 1rem;
   margin-bottom: 2rem;
 }
@@ -519,7 +519,7 @@ section {
 
 /* Footer */
 footer {
-  background: url('images/footerbg.png') center center / cover no-repeat;
+  background: url('images/footerbg.jpg') center center / cover no-repeat;
   padding: 2.5rem 1.5rem;
   color: #fff;
   position: relative;
