@@ -26,7 +26,7 @@ body {
   margin-bottom: 2rem;
 }
 .hero h1 {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Great Vibes', 'Brush Script MT', Georgia, 'Times New Roman', serif;
   font-size: clamp(3rem, 9vw, 5.5rem);
   font-weight: 400;
   color: #fff;
@@ -418,6 +418,36 @@ section {
   margin-top: 0.5rem;
 }
 
+/* Section intro text */
+.section-intro {
+  text-align: center;
+  color: #666;
+  margin: 0 auto 1.5rem;
+  max-width: 640px;
+}
+
+/* Performance Videos */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+@media (max-width: 649px) {
+  .video-grid { grid-template-columns: 1fr; }
+}
+.video-item {
+  display: flex;
+  justify-content: center;
+}
+.video-item video {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 9/16;
+  background: #000;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
 /* Location */
 .location-layout {
   display: grid;
@@ -502,7 +532,7 @@ section {
   padding: 4rem 1.5rem;
 }
 .thankyou-wrap h1 {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Great Vibes', 'Brush Script MT', Georgia, 'Times New Roman', serif;
   font-size: clamp(3rem, 9vw, 5rem);
   font-weight: 400;
   color: #333;
